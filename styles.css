@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+
+body,
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url('images/confectionary.png');
+    min-width: 310px;
+}
+
+.page-head {
+    background: url('/images/rest_bg4.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.our-menue{
+    color: white;
+}
+
+.margin-2rem {
+    margin: 2rem;
+}
+
+
+.card-product:hover {
+    transition: .2s;
+    border: 1px solid #0aad0a;
+    -webkit-transition: 0.2s;
+}
+
+
+.card-img-top {
+    object-fit: cover;
+    height: 116px;
+    width: 100px;
+    float: left;
+    margin-right: 1rem;
+
+}
+
+
+.dishes-container {
+    margin: 1rem;
+}
+
+.dish-container {
+    margin-bottom: 1rem;
+}
+
+.card-desc {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: small;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        float: none;
+        width: 100%;
+        margin-bottom: 0.5rem;
+
+    }
+
+}
+
+
+
+.card-order {
+    display: flex;
+    gap: 5%;
+    justify-content: flex-start;
+}
+
+
+.item-quantity {
+    flex-basis: 47%;
+
+}
+
+.btn-add {
+    flex-basis: 47%;
+
+}
+
+
+
+@media (max-width:433px) {
+    .card-desc{
+        height: max-content;
+        /* margin-bottom: 25px; */
+    }
+
+    .card-details{
+        /* height: 130px; */
+        /* margin-bottom: 25px; */
+    }
+    .card-order {
+        clear: left;
+        margin-top: 20px;
+    }
+}
